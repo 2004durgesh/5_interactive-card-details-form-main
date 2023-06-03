@@ -62,7 +62,7 @@ input[type=number] {
 body {
     background-color: white;
     font-family: 'Space Grotesk', sans-serif;
-    /* overflow: hidden; */
+    overflow: hidden;
     font-weight: 500;
 }
 
