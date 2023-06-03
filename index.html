@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="resp.css">
+
+  <title>Interactive card details form</title>
+</head>
+
+<body>
+  <main class="main-body">
+    <!-- all images -->
+    <div class="bg-img-container">
+      <img src="images/bg-main-desktop.png" alt="" class="bg-img-desktop">
+      <img src="images/bg-main-mobile.png" alt="" class="bg-img-mobile">
+      <div class="relative">
+        <img src="images/bg-card-front.png" alt="" class="absolute bg-card-front">
+        <div class="text-on-front flex flex-col">
+          <span class="card-number" id="show-card-number">0000 0000 0000 0000</span>
+          <div class="flex items-center justify-between">
+            <span class="name" id="show-name">Jane Appleseed</span>
+            <span class="exp" id="show-date-and-year">00/00</span>
+          </div>
+        </div>
+        <img src="images/card-logo.svg" alt="" class="absolute card-logo">
+        <img src="images/bg-card-back.png" alt="" class="absolute bg-card-back">
+        <div class="text-on-back" id="show-cvc">000</div>
+      </div>
+    </div>
+    <!-- form -->
+    <div class="form flex justify-center items-center" id="form">
+      <form class="flex flex-col">
+        <label for="user-name">Cardholder Name</label>
+        <input type="text" id="user-name" placeholder="e.g. Jane Appleseed">
+        <label for="user-name" id="user-name-error" class=""></label>
+
+        <label for="number">Card Number</label>
+        <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" inputmode="numeric">
+        <label for="number" id="card-number-error"></label>
+
+        <div class="wrapper flex items-center">
+          <!-- date and year -->
+          <div class="date-and-year">
+            <label for="date-and-year">Exp. Date (MM/YY)</label>
+            <div class="flex items-center">
+              <input type="number" id="date" placeholder="MM" inputmode="numeric">
+              <input type="number" id="year" placeholder="YY" inputmode="numeric">
+            </div>
+            <label for="date-and-year" id="date-and-year-error">Can't be blank</label>
+          </div>
+          <!-- cvc -->
+          <div class="cvc flex flex-col">
+            <label for="cvc">CVC</label>
+            <input type="number" id="cvc" placeholder="e.g. 123" style="margin-bottom: 0.875rem;" inputmode="numeric">
+            <label for="cvc" id="cvc-error">Can't be blank</label>
+          </div>
+        </div>
+        <button id="confirm" class="confirm-btn">Confirm</button>
+      </form>
+    </div>
+    <!-- successfull -->
+    <section class="completion flex flex-col justify-center items-center" id="completion-page">
+      <img src="/images/icon-complete.svg" alt="">
+      <h1>THANK YOU!</h1>
+      <p>We've added your card details</p>
+      <button id="continue" class="continue-btn">Continue</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

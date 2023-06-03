@@ -1,0 +1,118 @@
+@media screen and (max-width: 1400px) {
+    .bg-img-desktop {
+        display: none;
+    }
+
+    .bg-img-mobile {
+        display: inline-block;
+        width: 100vw;
+    }
+
+    .bg-card-front {
+        position: sticky;
+        transform: translate(-18%, -66%);
+        z-index: 10;
+        width: 80%;
+    }
+
+    .bg-card-back {
+        position: sticky;
+        transform: translate(-5%, -290%);
+        width: 80%;
+
+    }
+
+    .text-on-front {
+        position: relative;
+        top: 13px;
+        width: 70%;
+        left: 5%;
+        transform: translate(9%, -225px);
+        z-index: 10;
+    }
+
+    .text-on-back {
+        position: fixed;
+        bottom: 263px;
+        width: 67%;
+        left: 34%;
+        transform: translate(-23%, -514%) rotate(180deg);
+        z-index: 0;
+    }
+
+    .card-logo {
+        transform: translate(-27%, 605px);
+        top: -704px;
+        left: 17%;
+        z-index: 10;
+        width: 20%;
+
+    }
+
+    .form {
+        width: 100vw;
+        margin: 20% 10px;
+    }
+
+    .completion {
+        width: 70%;
+        margin-top: -88%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .bg-img-desktop {
+        display: none;
+    }
+
+    .bg-img-mobile {
+        display: inline-block;
+        width: 100vw;
+    }
+
+    .bg-card-front {
+        position: sticky;
+        transform: translate(-18%, -66%);
+        z-index: 10;
+        width: 80%;
+    }
+
+    .bg-card-back {
+        position: sticky;
+        transform: translate(-5%, -290%);
+        width: 80%;
+
+    }
+
+    .text-on-front {
+        position: relative;
+        top: -33px;
+        width: 67%;
+        left: 7%;
+        transform: translate(9%, -225px);
+        z-index: 10;
+    }
+
+    .text-on-back {
+        position: fixed;
+        bottom: 263px;
+        width: 67%;
+        left: 34%;
+        transform: translate(-23%, -514%) rotate(180deg);
+        z-index: 0;
+    }
+
+    .card-logo {
+        transform: translate(-27%, 605px);
+        top: -704px;
+        left: 17%;
+        z-index: 10;
+        width: 20%;
+
+    }
+
+    .form {
+        width: 100vw;
+        margin: 20% 10px;
+    }
+}
