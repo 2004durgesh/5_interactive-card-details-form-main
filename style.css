@@ -88,7 +88,8 @@ body {
 }
 
 .text-on-front {
-    transform: translate(145px, -435px);
+    width: 400px;
+    transform: translate(170px, -435px);
     color: white;
 }
 
@@ -106,8 +107,8 @@ body {
     text-transform: uppercase;
 }
 
-.text-on-back {
-    transform: translate(560px, -260px);
+.text-on-back {      
+    transform: translate(620px, -260px);
     color: white;
     font-weight: 400;
     font-size: .75rem;
